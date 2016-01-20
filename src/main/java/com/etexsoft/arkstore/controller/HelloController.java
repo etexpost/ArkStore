@@ -1,4 +1,4 @@
-package com.etexsoft.arkstore;
+package com.etexsoft.arkstore.controller;
 
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.ModelMap;
