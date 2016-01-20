@@ -6,14 +6,25 @@ import java.util.ArrayList;
 
 /**
  * Created by Андрей on 20.01.2016.
- * Клиенты компании
+ * Клиієнти компанії
  *
  */
 
 @Entity
-@Table(name = "clients") /*Данные о клиентах гранятся в таблице clients */
+@Table(name = "clients") /*Дані про клієнтів зберігаються в таблиці clients */
 public class Client {
-    private String fullNane; /*Полное наименование клиента*/
-    private String shortName; /*Сокращенное наименование клиента*/
-    private ArrayList <String> = new ArrayList <String>;
+    private class contactPerson {
+        private String surname;
+        private String name;
+        private String midName;
+    }
+
+    private boolean clientType; /* Тип клієнта - true = Юрособа -  false = Фізособа */
+    private String fullNane; /*Повне найменування клієнта*/
+    private String shortName; /*Скорочене найменування клієнта*/
+    private ArrayList <String> phoneNumber = new ArrayList <String>(); /*Телефонні номери*/
+    private ArrayList <String> cellNumber = new ArrayList <String>(); /*Мобільні номери*/
+    private ArrayList <contactPerson> clientContactPerson = new ArrayList <contactPerson>(); /*Список контактних осіб*/
+    private User manager; /*Менеджер, який працює з клієнтом*/
+
 }
