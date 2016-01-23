@@ -151,11 +151,11 @@ public class Client {
         this.clientContactPerson.add(contactPerson);
     }
 
-    public void addHistoryOfChanges(Client client) {
-        client.setDateOfChange();   /*Передати поточну дату*/
-        client.setWhoMadeChanges(); /*Передати поточного користувача*/
+ /*   public void addHistoryOfChanges(Client client) {
+        client.setDateOfChange();   *//*Передати поточну дату*//*
+        client.setWhoMadeChanges(); *//*Передати поточного користувача*//*
         this.historyOfChanges.add(client);
-    }
+    }*/
 
 
 
