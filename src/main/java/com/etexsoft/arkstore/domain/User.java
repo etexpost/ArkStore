@@ -96,12 +96,13 @@ public class User {
         this.accessStatus = accessStatus;
     }
 
+    private Long id;
     private String UserSurname; /*Прізвище користувача*/
     private String UserName; /*Ім'я користувача*/
     private String UserMidName; /*По батькові користувача*/
     private String login; /*Логін користувача*/
     private String password; /*Пароль користувача*/
-    private String status; /*статус - адміністратор, менеджер і т.юд.*/
+    private UserStatus status; /*статус - адміністратор, менеджер і т.д.*/
     private LocalGregorianCalendar.Date dateOfBirth; /*Дата народження*/
     private LocalGregorianCalendar.Date dateStartWork; /*Дата початку роботи*/
     private LocalGregorianCalendar.Date dateStopWork; /*Дата завершення роботи*/
