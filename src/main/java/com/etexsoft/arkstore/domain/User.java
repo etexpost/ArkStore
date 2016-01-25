@@ -97,6 +97,7 @@ public class User {
 
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
+    @Column(name = "Id")
     private Long id;
 
     private String UserSurname; /*Прізвище користувача*/

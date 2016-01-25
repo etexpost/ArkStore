@@ -32,6 +32,7 @@ public class UserStatus {
     }
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
+    @Column(name = "Id")
     private Long id;
 
     private String status;
