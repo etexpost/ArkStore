@@ -1,9 +1,14 @@
 package com.etexsoft.arkstore.domain;
 
+import javax.persistence.*;
+
 /**
  * Created by Андрей on 25.01.2016.
  * Статус користувача: Адмыныстратор, Менеджер ы т.д.
  */
+
+@Entity
+@Table(name = "UserStatus")
 public class UserStatus {
 
     UserStatus () {
@@ -25,8 +30,10 @@ public class UserStatus {
     public void setStatus(String status) {
         this.status = status;
     }
-
+    @Id
+    @GeneratedValue(strategy = GenerationType.AUTO)
     private Long id;
+
     private String status;
 
 }

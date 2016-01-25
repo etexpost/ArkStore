@@ -2,8 +2,7 @@ package com.etexsoft.arkstore.domain;
 
 import sun.util.calendar.LocalGregorianCalendar;
 
-import javax.persistence.Entity;
-import javax.persistence.Table;
+import javax.persistence.*;
 
 /**
  * Created by Андрей on 20.01.2016.
@@ -96,7 +95,10 @@ public class User {
         this.accessStatus = accessStatus;
     }
 
+    @Id
+    @GeneratedValue(strategy = GenerationType.AUTO)
     private Long id;
+
     private String UserSurname; /*Прізвище користувача*/
     private String UserName; /*Ім'я користувача*/
     private String UserMidName; /*По батькові користувача*/
