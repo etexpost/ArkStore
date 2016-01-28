@@ -9,7 +9,6 @@ import org.springframework.web.bind.annotation.RequestMethod;
  * Created by Андрей on 28.01.2016.
  */
 @Controller
-
 public class ControllerMain {
         @RequestMapping(value = "/hello",method = RequestMethod.GET)
         public String printWelcome(ModelMap model) {
